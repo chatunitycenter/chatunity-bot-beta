@@ -1,3 +1,4 @@
+//creazione di riad il padre santo
 function _0x331e() {
     const _0x453707 = [
         'error',
