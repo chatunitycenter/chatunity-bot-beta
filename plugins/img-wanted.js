@@ -24,6 +24,18 @@ let handler = async (m, { conn, args }) => {
         return m.reply("Non è stato possibile recuperare la foto profilo di questo utente.");
       }
     }
+    // Se non c'è quoted e ci sono mentions, usa la foto profilo del primo utente menzionato
+    else if (!m.quoted && m.mentionedJid && m.mentionedJid.length > 0) {
+      let who = m.mentionedJid[0];
+      try {
+        let url = await conn.profilePictureUrl(who, 'image');
+        const res = await axios.get(url, { responseType: 'arraybuffer' });
+        mediaBuffer = Buffer.from(res.data);
+        mimeType = 'image/jpeg';
+      } catch (e) {
+        return m.reply("Non è stato possibile recuperare la foto profilo dell'utente menzionato.");
+      }
+    }
     // Se non c'è quoted e non c'è immagine, prendi la foto profilo dell'utente che ha inviato il comando
     else if (!m.quoted && (!mimeType || !mimeType.startsWith('image/'))) {
       let who = m.sender;

@@ -33,7 +33,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     "Antilink": chat.antiLink,
     "Antilinkhard": chat.antiLinkHard,
     "Antispam": chat.antiSpam,
-    "Antitrava": chat.antiTraba,
+    "Antitrava": chat.antitrava,
     "Antiviewonce": chat.antiviewonce,
     "Autosticker": chat.autosticker,
     "Benvenuto": chat.welcome,
@@ -54,6 +54,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     "Antivirus": chat.antivirus,
     "Antibot": chat.antibot,
     "Antivoip": chat.antivoip || false,
+    "Antimedia": chat.antimedia,
+    "Antisondaggi": chat.antisondaggi,
   };
 
   let statusList = Object.entries(functions)

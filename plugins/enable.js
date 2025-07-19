@@ -5,7 +5,7 @@ const features = [
     { key: 'antiLink', label: 'Antilink' },
     { key: 'antiLinkHard', label: 'Antilinkhard' },
     { key: 'antiSpam', label: 'Antispam' },
-    { key: 'antiTraba', label: 'Antitrava' },
+    { key: 'antitrava', label: 'Antitrava' },
     { key: 'antiviewonce', label: 'Antiviewonce' },
     { key: 'autosticker', label: 'Autosticker' },
     { key: 'welcome', label: 'Benvenuto' },
@@ -26,7 +26,8 @@ const features = [
     { key: 'antivirus', label: 'Antivirus' },
     { key: 'antibot', label: 'Antibot' },
     { key: 'antivoip', label: 'Antivoip' },
-    { key: 'chatbotPrivato', label: 'ChatbotPrivato' }
+    { key: 'antimedia', label: 'Antimedia' },
+    { key: 'antisondaggi', label: 'Antisondaggi' },
 ];
 
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
