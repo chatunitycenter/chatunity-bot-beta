@@ -582,4 +582,4 @@ export async function before(m, { conn, groupMetadata }) {
         console.error('Errore:', error)
     }
     return true
-}*/
+}
