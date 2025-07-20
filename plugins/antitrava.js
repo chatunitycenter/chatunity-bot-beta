@@ -51,7 +51,7 @@ m.productListMessage ||
 m.interactiveMessage
 ) {
 
-conn.sendMessage(m.chat, { text: `𝐏𝐎𝐒𝐒𝐈𝐁𝐈𝐋𝐄 𝐖𝐀-𝐁𝐔𝐆 𝐑𝐈𝐋𝐄𝐕𝐀𝐓𝐎\n\n𝐖𝐀-𝐁𝐔𝐆 𝐄𝐋𝐋𝐈𝐌𝐈𝐍𝐀𝐓𝐎\n\n\n𝐁𝐘𝐄 𝐁𝐘𝐄: ${user}`, mentions: [m.sender] }, { quoted: fkontak })
+conn.sendMessage(m.chat, { text: `𝐏𝐎𝐒𝐒𝐈𝐁𝐈𝐋𝐄 𝐖𝐀-𝐁𝐔𝐆 𝐑𝐈𝐋𝐄𝐕𝐀𝐓𝐎\n\n𝐖𝐀-𝐁𝐔𝐆 𝐄𝐋𝐋𝐈𝐌𝐈𝐍𝐀𝐓𝐎\n\n\n𝐁𝐘𝐄 𝐁𝐘𝐄\n\n> 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐛𝐲 𝐃𝐄𝐀𝐓𝐇: ${user}`, mentions: [m.sender] }, { quoted: fkontak })
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet } })
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 return null
