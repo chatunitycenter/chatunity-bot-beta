@@ -62,4 +62,3 @@ function generateMenuText(prefix, botName, userCount) {
 ╰━━━━━━━━━━━━━┈·๏
 `.trim();
 }
-
