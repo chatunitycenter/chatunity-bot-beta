@@ -63,6 +63,7 @@ global.vs = '5.3'
 global.nomebot = '𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭'
 
 global.multiplier = 69 
+
 global.maxwarn = '4' 
 
 
