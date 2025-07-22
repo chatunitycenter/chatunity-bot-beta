@@ -49,7 +49,7 @@ const handler = async (message, { conn, usedPrefix, command }) => {
 
 handler.help = ['menuadmin', 'menu', 'menuowner', 'menusicurezza', 'menugruppo'];
 handler.tags = ['menuadmin'];
-handler.command = /^(menuadmin|menu|menuowner|menusicurezza|menugruppo)$/i;
+handler.command = /^(menuadmin|menuadm)$/i;
 
 export default handler;
 
@@ -87,7 +87,7 @@ function generateMenuText(prefix, botName, userCount) {
 ┃◈┃  
 ┃◈└───────────┈⊷  
 ╰━━━━━━━━━━━━━┈·๏  
-*•────────────•⟢*  
+*•────────────•⟢* 
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲  
 *•────────────•⟢*  
 `.trim();
