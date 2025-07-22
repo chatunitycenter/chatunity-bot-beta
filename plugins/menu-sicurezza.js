@@ -102,6 +102,6 @@ ${statusList.split('\n').map(line => `┃◈┃• ${line}`).join('\n')}
 
 handler.help = ["menusicurezza", "menu", "menuadmin", "menuowner", "menugruppo"];
 handler.tags = ["menu"];
-handler.command = /^(menusicurezza|menu|menuadmin|menuowner|menugruppo)$/i;
+handler.command = /^(menusicurezza|menusic)$/i;
 
 export default handler;
