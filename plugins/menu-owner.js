@@ -48,7 +48,7 @@ const handler = async (message, { conn, usedPrefix, command }) => {
 
 handler.help = ['menuowner', 'menu', 'menuadmin', 'menusicurezza', 'menugruppo'];
 handler.tags = ['menu'];
-handler.command = /^(menuowner|menu|menuadmin|menusicurezza|menugruppo)$/i;
+handler.command = /^(menuowner|menuown)$/i;
 
 export default handler;
 
